@@ -1,0 +1,14 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  name: tool
+spec:
+  containers:
+  - args:
+    - while true; do sleep 30; done;
+    command:
+    - /bin/bash
+    - -c
+    - --
+    image: ubuntu
+    name: tool
